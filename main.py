@@ -122,7 +122,7 @@ def prediction_route():
             
             # Return the predictions as JSON
             response = {
-                'predictions': predictions.tolist(),
+                'Actual_Yield': predictions.tolist(),
                 'status': 'success'
             }
             

@@ -113,8 +113,32 @@ The API accepts a JSON payload with a `features` array. The array should contain
     ```bash
     curl -X POST \
     -H "Content-Type: application/json" \
-    -d '{"features": [1.0, 0.5, 0.3, 0.7, 0.6, 0.4, 0.5, 0.6, 0.3, 2.0, 0.5, 0.6, 0.5, 0.4, 0.3, 0.4, 0.5, 1.0, 3.0, 0.8, 0.0]}' \
-    YOUR_FUNCTION_URL
+    -d '{
+  "data": [
+    {
+      "STATIONNAME": "Arua",
+      "LONGITUDE": 30.92,
+      "LATITUDE": 3.05,
+      "ELEVATION_METER": 1211,
+      "CROP": "Rainfed maize",
+      "YW": 7.99,
+      "YP": 14.04,
+      "WPA": 3.5,
+      "CLIMATEZONE": 7601
+    },
+    {
+      "STATIONNAME": "Namulonge",
+      "LONGITUDE": 32.615,
+      "LATITUDE": 0.525,
+      "ELEVATION_METER": 1160,
+      "CROP": "Rainfed maize",
+      "YW": 7.76,
+      "YP": 13.02,
+      "WPA": 5.99,
+      "CLIMATEZONE": 7501
+    }
+  ]' \
+    https://actual-yield-predictor-4065ab6b-53bb-4156-abd0.cranecloud.io/predict
     ```
 
     * Replace `YOUR_FUNCTION_URL` with your Cloud Function's URL.

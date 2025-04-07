@@ -141,7 +141,7 @@ The API accepts a JSON payload with a `features` array. The array should contain
     https://actual-yield-predictor-4065ab6b-53bb-4156-abd0.cranecloud.io/predict
     ```
 
-    * Replace `YOUR_FUNCTION_URL` with your Cloud Function's URL.
+ 
 
 3.  **Test with Postman:**
 

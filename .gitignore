@@ -28,3 +28,5 @@
 .env.test.local
 .env.production.local
 
+
+crop-yield-prediction.json
